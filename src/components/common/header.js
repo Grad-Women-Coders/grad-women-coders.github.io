@@ -9,6 +9,8 @@ import twitter from './twitter.png';
 import instagram from './instagram.png';
 import registerServiceWorker from './registerServiceWorker';
 
+import { Link } from 'react-router-dom'
+
 registerServiceWorker();
 
 // Tab item
@@ -56,31 +58,24 @@ class Square extends React.Component {
     }
   
     onEventsClick() {
-      window.open("events","_self");
     }
 
     onGalleryClick() {
-        window.open("gallery","_self");
     }
   
     onJobPostingsClick() {
-      window.open("jobs","_self");
     }
 
     onBlogClick() {
-      window.open("blog","_self");
     }
   
     onTeamClick() {
-      window.open("team","_self");
     }
   
     onContactClick() {
-      window.open("contact","_self");
     }
 
     onHomeClick() {
-        window.open("http://Grad-Women-Coders.github.io/","_self");
     }
   
     render() {
@@ -96,13 +91,13 @@ class Square extends React.Component {
               supporting and engaging women in tech
           </div>
            <div className="tab-row header-el ">
-            <Square text="home" click={this.onHomeClick} />
-            <Square text="contact" click={this.onContactClick} />
-            <Square text="team" click={this.onTeamClick} />
-            <Square text="events" click={this.onEventsClick} />
-            <Square text="gallery" click={this.onGalleryClick} />
-            <Square text="blog" click={this.onBlogClick} />
-            <Square text="job postings" click={this.onJobPostingsClick} />
+           <Link to='/'><Square text="home" click={this.onHomeClick} /></Link>
+           <Link to='/contact'><Square text="contact" click={this.onContactClick} /></Link>
+           <Link to='/team'><Square text="team" click={this.onTeamClick} /></Link>
+           <Link to='/events'><Square text="events" click={this.onEventsClick} /></Link>
+           <Link to='/gallery'><Square text="gallery" click={this.onGalleryClick} /></Link>
+           <Link to='/blog'><Square text="blog" click={this.onBlogClick} /></Link>
+           <Link to='/jobs'><Square text="job postings" click={this.onJobPostingsClick} /></Link>
            </div>
         </div> 
       );

@@ -18,7 +18,7 @@ import emailcontact from './email.png';
 import facebookcontact from './facebook.png';
 import instagramcontact from './instagram.png';
 
-import './App.css';
+import './contact.css';
 import './common/header.css';
 import {Header, Footer} from './common/header.js'
 
@@ -27,7 +27,7 @@ import MailchimpSubscribe from "react-mailchimp-subscribe"
 const actionURL = "https://neu.us15.list-manage.com/subscribe/post?u=88dd80df664d10f8289493412&amp;id=b9f017b346"
 
 
-class App extends Component {
+class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = { hidePhoto:true}
@@ -46,7 +46,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
         <div className="Team-Header_">      
           <div className="team-cover-text" >
           You can reach us here!
@@ -65,7 +64,6 @@ class App extends Component {
         </div>
         <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5898.304414487892!2d-71.0950657451163!3d42.33927816720446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a21f1bc9735%3A0x655e0c46cdbdf694!2sWest+Village+G!5e0!3m2!1sen!2sus!4v1535663511720" width="822px" height="350" frameBorder="0"  allowFullScreen></iframe>
         <Form/>
-        <Footer/>
       </div>
     );
   }
@@ -115,4 +113,4 @@ class Form extends React.Component {
   }
 }
 
-export default App;
+export default Contact;

@@ -6,6 +6,7 @@ body {
 }
 
 .App-header {
+  font-family: 'Ubuntu', sans-serif;
   height: 40px; 
   padding: 20px;
   padding-right: 0px;

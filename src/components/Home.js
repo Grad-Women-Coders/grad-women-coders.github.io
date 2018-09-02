@@ -13,23 +13,22 @@ import clock from './common/clock.png';
 import location from './common/location.png';
 import ccis from './common/ccis.png';
 import bullet from './common/bulletpoint.png'
-import './App.css';
+
+import './Home.css';
 import './common/header.css';
 import {Header, Footer} from './common/header.js'
-
 import Typing from 'react-typing-animation';
-import scrollToComponent from 'react-scroll-to-component';
+import { render } from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
  
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
         <Cover/>
         <About/>
         <Contact/>
-        <Footer />
       </div>
     );
   }
@@ -190,4 +189,4 @@ class Contact extends Component {
   }
 }
 
-export default App;
+export default Home;
