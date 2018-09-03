@@ -14,9 +14,7 @@ import location from './common/location.png';
 import ccis from './common/ccis.png';
 import bullet from './common/bulletpoint.png'
 
-import './Home.css';
-import './common/header.css';
-import {Header, Footer} from './common/header.js'
+import './Common.css';
 import Typing from 'react-typing-animation';
 import { render } from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'

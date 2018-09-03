@@ -1,18 +1,4 @@
 import React, { Component, ReactComponent } from 'react';
-import coverphoto from './common/cover_photo.jpg';
-import facebook from './common/fb.png';
-import email from './common/email.png';
-import hackpad from './common/hackpad.png';
-import git from './common/git.svg';
-import twitter from './common/twitter.png';
-import instagram from './common/instagram.png';
-import logo from './common/gwc.png';
-import neu from './common/neu.png';
-import calendar from './common/calendar.png';
-import clock from './common/clock.png';
-import location from './common/location.png';
-import ccis from './common/ccis.png';
-import bullet from './common/bulletpoint.png'
 
 import person_email from './person_email.png';
 import person_git from './person_git.png';
@@ -28,9 +14,6 @@ import yella from './team_photos/yella.jpg'
 import vander_laan from './team_photos/vander_laan.jpg';
 import jamel from './team_photos/jamel.jpg';
 import hodgkin from './team_photos/hodgkin.jpg';
-
-import './team.css';
-import './common/header.css';
 
 import { Carousel } from 'react-responsive-carousel';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';

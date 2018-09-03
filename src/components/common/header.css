@@ -5,6 +5,11 @@ body {
   min-height: 100%;
 }
 
+#c {
+  min-height: 100%;
+  position: relative;
+}
+
 .App-header {
   font-family: 'Ubuntu', sans-serif;
   height: 40px; 
@@ -15,11 +20,13 @@ body {
   background-color: white;
   border-bottom: solid 2px #63a6e1; 
   width: 100%; 
+  text-align: center; 
 }
 
 .footer {
+  font-family: 'Ubuntu', sans-serif;
   height: 80px;
-  padding: 15px;
+  padding: 15px; 
   padding-right: 0px; 
   padding-left: 0px; 
   font-size: 18px; 
@@ -30,9 +37,8 @@ body {
   border-top: solid 2px #63a6e1; 
   width: 100%; 
   position: absolute;
-  right: 0;
   bottom: 0;
-  left: 0;
+
 }
 
 .footer-name {
@@ -44,6 +50,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 
 .block.footermark {
   margin: 0 auto; 
@@ -121,9 +128,17 @@ a {
 }
 
 .no-upcoming-events {
+  text-align: left; 
   padding: 20px; 
+  padding-left: 0px; 
   font-size: 15px; 
   color: rgb(97, 96, 96); 
+}
+
+.contactitem.small {
+  padding: 10px;
+  display: inline-block;
+  width: 30%;
 }
 
 @media only screen and (max-width: 1350px) {
@@ -225,12 +240,18 @@ a {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 364px) {
   .square {
     width: 40%; 
   }
 
   .App-header {
     height: 150px;  
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .title-mobile {
+    font-size: 12px; 
   }
 }

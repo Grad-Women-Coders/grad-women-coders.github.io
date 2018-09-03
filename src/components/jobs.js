@@ -1,5 +1,4 @@
 import React, { Component, ReactComponent } from 'react';
-import './jobs.css';
 import './common/header.css';
 import {Header, Footer} from './common/header.js'
 

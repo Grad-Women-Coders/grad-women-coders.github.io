@@ -12,7 +12,6 @@ import calendar from './common/calendar.png';
 import clock from './common/clock.png';
 import location from './common/location.png';
 import ccis from './common/ccis.png';
-import './gallery.css';
 import './common/header.css';
 import {Header, Footer} from './common/header.js'
 

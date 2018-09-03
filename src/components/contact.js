@@ -18,7 +18,6 @@ import emailcontact from './email.png';
 import facebookcontact from './facebook.png';
 import instagramcontact from './instagram.png';
 
-import './contact.css';
 import './common/header.css';
 import {Header, Footer} from './common/header.js'
 
@@ -47,7 +46,7 @@ class Contact extends Component {
     return (
       <div className="App">
         <div className="Team-Header_">      
-          <div className="team-cover-text" >
+          <div className="contact-cover-text" >
           You can reach us here!
           </div>
         </div>

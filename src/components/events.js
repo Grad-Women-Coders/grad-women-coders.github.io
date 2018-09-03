@@ -40,7 +40,6 @@ import {const_witempsummit2018, const_cloud9google2018,const_algandintprep2018,
 
 import Popup from "reactjs-popup";
 import DOMPurify from 'dompurify'
-import './events.css';
 import './common/header.css';
 import {Header, Footer} from './common/header.js'
 
@@ -184,7 +183,7 @@ class Events extends Component {
                       popupContent= {const_codeathon2017.popupContent} />
             </div>
         </div>
-        <div className="events-pages"  >
+        <div className="events-pages bottom"  >
             <button className={ "events-tag-button " + this.state.page1Style} onClick={this.onPage1Click} > 1 </button> 
             <button className={ "events-tag-button " + this.state.page2Style} onClick={this.onPage2Click} > 2 </button> 
             {/* <button className={ "events-tag-button " + this.state.page3Style} onClick={this.onPage3Click} > 3 </button>  */}
@@ -315,7 +314,7 @@ class Event extends Component {
                 <span className="event-location-text"> {this.state.location} </span> 
               </div>
       </div>
-      <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(popupContent)}}>
+      <div className="popupText" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(popupContent)}}>
        </div> 
       </div>
     </Popup>
