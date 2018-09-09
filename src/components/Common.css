@@ -1030,18 +1030,32 @@ button:hover, .button:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-  .gallery-cover-text {
+  .blog-header {
     font-size: 40px; 
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .gallery-cover-text {
+  .blog-header {
     font-size: 25px; 
   }
 }
 
 /* JOBS PAGE STYLES */
+
+.jobs-header {
+  width: 70%;
+  display:inline-block;
+  background-color: none;
+  color:#bf4d28; 
+  padding-top: 0px; 
+  padding-bottom: 30px;
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  font-size:50px;
+}
 
 .job-column {
   float: left; 
@@ -1119,4 +1133,39 @@ a {
 .jobs-div {
   width: 60%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1300px) {
+  .job-column.right {
+    width: 100%; 
+    min-height: 40px;
+    margin-left: 40px; 
+    
+  }
+
+  .job-column.middle {
+    width: auto; 
+    padding-left: 20px; 
+  }
+
+  .job-column.left {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .jobs-header {
+    font-size: 40px; 
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .job-column.left, .job-column.middle {
+    width: 100%; 
+  }
+
+  .jobs-header {
+    font-size: 25px; 
+  }
 }

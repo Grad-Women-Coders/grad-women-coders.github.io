@@ -9,7 +9,7 @@ class Jobs extends Component {
   render() {
     return (
       <div className="App">
-        <div className="blog-header" >
+        <div className="jobs-header" >
         Career Opportunities 
         </div>
         <div className="no-posts" hidden={true}>
