@@ -13,10 +13,10 @@
   background: #222;
 }
 
+
 body {
   height: 100%;
   font-family: 'Ubuntu', sans-serif !important;
-
 }
 
 .Home {
@@ -1042,3 +1042,81 @@ button:hover, .button:hover {
 }
 
 /* JOBS PAGE STYLES */
+
+.job-column {
+  float: left; 
+}
+
+.job-column.left {
+  width: 20%; 
+}
+
+.job-column.middle {
+  width: 60%;
+  text-align: left; 
+  padding-left: 20px; 
+}
+
+.job-column.right {
+  width: 15%; 
+  float: right; 
+  position: relative;
+  min-height: 120px;
+}
+
+.job-loc-img {
+  width: 80px; 
+  height: 80px; 
+}
+
+.job-location {
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+}
+
+.button.job-link-btn {
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  padding-right: 20px; 
+  padding-left: 20px; 
+  color: #222;
+}
+
+.button.job-link-btn:hover {
+  color: #c7d2db; 
+}
+
+.job-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+ .job-item {
+   padding-bottom: 10px; 
+ }
+
+
+.job {
+  display:block;
+  min-height: 100px;
+  overflow: hidden;
+  width: 100%;
+  background: rgb(167, 167, 167); 
+  padding: 10px; 
+  margin-bottom: 30px; 
+  margin-top: 10px; 
+}
+
+.job-title {
+  font-size: 22px; 
+}
+
+a {
+  text-decoration: none;
+}
+
+.jobs-div {
+  width: 60%;
+  margin: 0 auto;
+}

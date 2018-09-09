@@ -1,8 +1,13 @@
+
+html {
+  background: #c7d2db; 
+}
+
 body {
   position: relative;
   margin: 0;
   padding-bottom: 110px;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 #c {
@@ -61,7 +66,7 @@ a {
 }
 
 .footerlogo{
-  width: 100%; 
+  width: 200px; 
   padding:15px;
 }
 
@@ -180,6 +185,11 @@ a {
 
 
 @media only screen and (max-width: 700px) {
+
+  .footerlogo {
+   width: 100px; 
+  }
+
   .left-header {
     visibility: hidden; 
     width: 0px; 
