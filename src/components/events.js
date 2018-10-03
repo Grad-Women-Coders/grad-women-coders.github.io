@@ -14,6 +14,8 @@ import location from './common/location.png';
 import ccis from './common/ccis.png';
 import bullet from './common/bulletpoint.png'
 
+import blockchainonoraclecloud2018 from './events_pics/blockchainonoraclecloud2018.jpeg';
+import agiledevopsimg18 from './events_pics/agiledevopsimg18.jpeg';
 import witempsummit2018 from './events_pics/witempsummit2018.png';
 import cloud9google2018 from './events_pics/cloud92018.png';
 import algandintprep2018 from './events_pics/algandinterview2018.png';
@@ -26,7 +28,7 @@ import talkintuit2017 from './events_pics/talkintuit2017.jpg';
 import talkintuitsp17 from './events_pics/talkintuitsp17.jpg';
 import techtalk2016 from './events_pics/techtalk2016.png';
 
-import {const_witempsummit2018, const_cloud9google2018,const_algandintprep2018,
+import {const_blockchainonoraclecloudtalk2018, const_agiledevopstalk2018, const_witempsummit2018, const_cloud9google2018,const_algandintprep2018,
   const_googlecambnight2017, const_internshiptalks2017,const_internshiptalks2018,
   const_network2017, const_sectechtalk2017,const_talkintuit2017,
   const_talkintuitsp17, const_techtalk2016,const_gmosession2017,
@@ -45,17 +47,17 @@ import {Header, Footer} from './common/header.js'
 
 const contentStyle = {
   height: "90%",
-  width: "60%", 
-  overflow:"scroll", 
+  width: "60%",
+  overflow:"scroll",
   background: "#c7d2db"
 };
 
 class Events extends Component {
   constructor(props) {
-    super(props); 
+    super(props);
 
     this.state = { currentPage: "1", page1Style:"clickedButton",
-    page2Style:"", page3Style:"", 
+    page2Style:"", page3Style:"",
     isPage1Hidden: false, isPage2Hidden:true};
 
     this.onPage1Click= this.onPage1Click.bind(this)
@@ -63,19 +65,19 @@ class Events extends Component {
     this.onPage3Click= this.onPage3Click.bind(this)
   }
 
-  onPage1Click() { 
+  onPage1Click() {
     this.setState({currentPage: "1", page1Style:"clickedButton",
-    page2Style:"", page3Style:"", 
+    page2Style:"", page3Style:"",
     isPage1Hidden: false, isPage2Hidden:true});
   }
 
-  onPage2Click() { 
+  onPage2Click() {
     this.setState({currentPage: "2", page1Style:"",
-    page2Style:"clickedButton", page3Style:"", 
+    page2Style:"clickedButton", page3Style:"",
     isPage1Hidden: true, isPage2Hidden:false});
   }
 
-  onPage3Click() { 
+  onPage3Click() {
     this.setState({currentPage: "3", page1Style:"",
     page2Style:"", page3Style:"clickedButton"});
   }
@@ -83,111 +85,119 @@ class Events extends Component {
   render() {
     return (
       <div className="App">
-        <div className="Events-Header">      
-          
+        <div className="Events-Header">
+
           <div className="events-pages">
-            <button className={ "events-tag-button " + this.state.page1Style} onClick={this.onPage1Click} > 1 </button> 
-            <button className={ "events-tag-button " + this.state.page2Style} onClick={this.onPage2Click} > 2 </button> 
+            <button className={ "events-tag-button " + this.state.page1Style} onClick={this.onPage1Click} > 1 </button>
+            <button className={ "events-tag-button " + this.state.page2Style} onClick={this.onPage2Click} > 2 </button>
             {/* <button className={ "events-tag-button " + this.state.page3Style} onClick={this.onPage3Click} > 3 </button>  */}
-          </div> 
+          </div>
         </div>
         <div className="Events" hidden={this.state.isPage1Hidden}>
           <div className="events-cover-text future-events-header">
           Upcoming Events
           </div>
-          <div className="noFutureEvents"> Check back soon for the latest events! </div>
-          {/* <Event currentPage= {this.state.currentPage} 
-                  title="Test Future Event" pic={coverphoto} 
-                  desc="Test event for testing future events for 
-                  sorting and styling"
-                  dateyear="2018" datemonth="October" datestartday="28" dateendday="30" 
-                  time="7pm-9pm" location="Northeastern University"
-                  popupContent= ""  /> */}
+          <div className="futureEvents">
+          <Event currentPage= {this.state.currentPage}
+                  title= {const_agiledevopstalk2018.title} pic={agiledevopsimg18}
+                  desc={const_agiledevopstalk2018.desc}
+                  dateyear={const_agiledevopstalk2018.dateyear} datemonth={const_agiledevopstalk2018.datemonth}
+                  datestartday={const_agiledevopstalk2018.datestartday} dateendday={const_agiledevopstalk2018.dateendday}
+                  time={const_agiledevopstalk2018.time} location={const_agiledevopstalk2018.location}
+                  popupContent= {const_agiledevopstalk2018.popupContent} />
+          <Event currentPage= {this.state.currentPage}
+                  title= {const_blockchainonoraclecloudtalk2018.title} pic={blockchainonoraclecloud2018}
+                  desc={const_blockchainonoraclecloudtalk2018.desc}
+                  dateyear={const_blockchainonoraclecloudtalk2018.dateyear} datemonth={const_blockchainonoraclecloudtalk2018.datemonth}
+                  datestartday={const_blockchainonoraclecloudtalk2018.datestartday} dateendday={const_blockchainonoraclecloudtalk2018.dateendday}
+                  time={const_blockchainonoraclecloudtalk2018.time} location={const_blockchainonoraclecloudtalk2018.location}
+                  popupContent= {const_blockchainonoraclecloudtalk2018.popupContent} />
+          </div>
         </div>
           <div className="events-cover-text past-events-header">
           Past Events
           </div>
           <div className="Events">
             <div className="page1" hidden={this.state.isPage1Hidden} >
-              <Event currentPage= {this.state.currentPage} 
-                      title= {const_witempsummit2018.title} pic={witempsummit2018} 
+              <Event currentPage= {this.state.currentPage}
+                      title= {const_witempsummit2018.title} pic={witempsummit2018}
                       desc={const_witempsummit2018.desc}
-                      dateyear={const_witempsummit2018.dateyear} datemonth={const_witempsummit2018.datemonth}  
-                      datestartday={const_witempsummit2018.datestartday} dateendday={const_witempsummit2018.dateendday} 
-                      time={const_witempsummit2018.time} location={const_witempsummit2018.location} 
+                      dateyear={const_witempsummit2018.dateyear} datemonth={const_witempsummit2018.datemonth}
+                      datestartday={const_witempsummit2018.datestartday} dateendday={const_witempsummit2018.dateendday}
+                      time={const_witempsummit2018.time} location={const_witempsummit2018.location}
                       popupContent= {const_witempsummit2018.popupContent} />
-              <Event currentPage= {this.state.currentPage} 
-                      title= {const_cloud9google2018.title} pic={cloud9google2018} 
+              <Event currentPage= {this.state.currentPage}
+                      title= {const_cloud9google2018.title} pic={cloud9google2018}
                       desc={const_cloud9google2018.desc}
-                      dateyear={const_cloud9google2018.dateyear} datemonth={const_cloud9google2018.datemonth}  
-                      datestartday={const_cloud9google2018.datestartday} dateendday={const_cloud9google2018.dateendday} 
-                      time={const_cloud9google2018.time} location={const_cloud9google2018.location} 
+                      dateyear={const_cloud9google2018.dateyear} datemonth={const_cloud9google2018.datemonth}
+                      datestartday={const_cloud9google2018.datestartday} dateendday={const_cloud9google2018.dateendday}
+                      time={const_cloud9google2018.time} location={const_cloud9google2018.location}
                       popupContent= {const_cloud9google2018.popupContent} />
-              <Event currentPage= {this.state.currentPage} 
-                      title= {const_algandintprep2018.title} pic={algandintprep2018} 
+              <Event currentPage= {this.state.currentPage}
+                      title= {const_algandintprep2018.title} pic={algandintprep2018}
                       desc={const_algandintprep2018.desc}
-                      dateyear={const_algandintprep2018.dateyear} datemonth={const_algandintprep2018.datemonth}  
-                      datestartday={const_algandintprep2018.datestartday} dateendday={const_algandintprep2018.dateendday} 
-                      time={const_algandintprep2018.time} location={const_algandintprep2018.location} 
+                      dateyear={const_algandintprep2018.dateyear} datemonth={const_algandintprep2018.datemonth}
+                      datestartday={const_algandintprep2018.datestartday} dateendday={const_algandintprep2018.dateendday}
+                      time={const_algandintprep2018.time} location={const_algandintprep2018.location}
                       popupContent= {const_algandintprep2018.popupContent} />
-              <Event currentPage= {this.state.currentPage} 
-                      title= {const_internshiptalks2018.title} pic={internshiptalks2018} 
+              <Event currentPage= {this.state.currentPage}
+                      title= {const_internshiptalks2018.title} pic={internshiptalks2018}
                       desc={const_internshiptalks2018.desc}
-                      dateyear={const_internshiptalks2018.dateyear} datemonth={const_internshiptalks2018.datemonth}  
-                      datestartday={const_internshiptalks2018.datestartday} dateendday={const_internshiptalks2018.dateendday} 
-                      time={const_internshiptalks2018.time} location={const_internshiptalks2018.location} 
+                      dateyear={const_internshiptalks2018.dateyear} datemonth={const_internshiptalks2018.datemonth}
+                      datestartday={const_internshiptalks2018.datestartday} dateendday={const_internshiptalks2018.dateendday}
+                      time={const_internshiptalks2018.time} location={const_internshiptalks2018.location}
                       popupContent= {const_internshiptalks2018.popupContent} />
-              <Event currentPage= {this.state.currentPage} 
-                      title= {const_gmosession2017.title} 
+              <Event currentPage= {this.state.currentPage}
+                      title= {const_gmosession2017.title}
                       desc={const_gmosession2017.desc} pic={logo}
-                      dateyear={const_gmosession2017.dateyear} datemonth={const_gmosession2017.datemonth}  
-                      datestartday={const_gmosession2017.datestartday} dateendday={const_gmosession2017.dateendday} 
-                      time={const_gmosession2017.time} location={const_gmosession2017.location} 
+                      dateyear={const_gmosession2017.dateyear} datemonth={const_gmosession2017.datemonth}
+                      datestartday={const_gmosession2017.datestartday} dateendday={const_gmosession2017.dateendday}
+                      time={const_gmosession2017.time} location={const_gmosession2017.location}
                       popupContent= {const_gmosession2017.popupContent} />
-              <Event currentPage= {this.state.currentPage} 
+              <Event currentPage= {this.state.currentPage}
                       title= {const_talkintuit2017.title} pic={talkintuit2017}
                       desc={const_talkintuit2017.desc}
-                      dateyear={const_talkintuit2017.dateyear} datemonth={const_talkintuit2017.datemonth}  
-                      datestartday={const_talkintuit2017.datestartday} dateendday={const_talkintuit2017.dateendday} 
-                      time={const_talkintuit2017.time} location={const_talkintuit2017.location} 
+                      dateyear={const_talkintuit2017.dateyear} datemonth={const_talkintuit2017.datemonth}
+                      datestartday={const_talkintuit2017.datestartday} dateendday={const_talkintuit2017.dateendday}
+                      time={const_talkintuit2017.time} location={const_talkintuit2017.location}
                       popupContent= {const_talkintuit2017.popupContent} />
-              <Event currentPage= {this.state.currentPage} 
-                      title= {const_internshiptalks2017.title} 
+              <Event currentPage= {this.state.currentPage}
+                      title= {const_internshiptalks2017.title}
                       desc={const_internshiptalks2017.desc} pic={internshiptalks2017}
-                      dateyear={const_internshiptalks2017.dateyear} datemonth={const_internshiptalks2017.datemonth}  
-                      datestartday={const_internshiptalks2017.datestartday} dateendday={const_internshiptalks2017.dateendday} 
-                      time={const_internshiptalks2017.time} location={const_internshiptalks2017.location} 
+                      dateyear={const_internshiptalks2017.dateyear} datemonth={const_internshiptalks2017.datemonth}
+                      datestartday={const_internshiptalks2017.datestartday} dateendday={const_internshiptalks2017.dateendday}
+                      time={const_internshiptalks2017.time} location={const_internshiptalks2017.location}
                       popupContent= {const_internshiptalks2017.popupContent} />
-              <Event currentPage= {this.state.currentPage} 
-                      title= {const_microservicessummer17.title} 
+              <Event currentPage= {this.state.currentPage}
+                      title= {const_microservicessummer17.title}
                       desc={const_microservicessummer17.desc} pic={logo}
-                      dateyear={const_microservicessummer17.dateyear} datemonth={const_microservicessummer17.datemonth}  
-                      datestartday={const_microservicessummer17.datestartday} dateendday={const_microservicessummer17.dateendday} 
-                      time={const_microservicessummer17.time} location={const_microservicessummer17.location} 
+                      dateyear={const_microservicessummer17.dateyear} datemonth={const_microservicessummer17.datemonth}
+                      datestartday={const_microservicessummer17.datestartday} dateendday={const_microservicessummer17.dateendday}
+                      time={const_microservicessummer17.time} location={const_microservicessummer17.location}
                       popupContent= {const_microservicessummer17.popupContent} />
             </div>
             <div className="page2" hidden={this.state.isPage2Hidden} >
-              <Event currentPage= {this.state.currentPage} 
-                        title= {const_codeathonII2017.title} 
+              <Event currentPage= {this.state.currentPage}
+                        title= {const_codeathonII2017.title}
                         desc={const_codeathonII2017.desc} pic={logo}
-                        dateyear={const_codeathonII2017.dateyear} datemonth={const_codeathonII2017.datemonth}  
-                        datestartday={const_codeathonII2017.datestartday} dateendday={const_codeathonII2017.dateendday} 
-                        time={const_codeathonII2017.time} location={const_codeathonII2017.location} 
+                        dateyear={const_codeathonII2017.dateyear} datemonth={const_codeathonII2017.datemonth}
+                        datestartday={const_codeathonII2017.datestartday} dateendday={const_codeathonII2017.dateendday}
+                        time={const_codeathonII2017.time} location={const_codeathonII2017.location}
                         popupContent= {const_codeathonII2017.popupContent} />
-              <Event currentPage= {this.state.currentPage} 
-                      title= {const_codeathon2017.title} 
+              <Event currentPage= {this.state.currentPage}
+                      title= {const_codeathon2017.title}
                       desc={const_codeathon2017.desc} pic={logo}
-                      dateyear={const_codeathon2017.dateyear} datemonth={const_codeathon2017.datemonth}  
-                      datestartday={const_codeathon2017.datestartday} dateendday={const_codeathon2017.dateendday} 
-                      time={const_codeathon2017.time} location={const_codeathon2017.location} 
+                      dateyear={const_codeathon2017.dateyear} datemonth={const_codeathon2017.datemonth}
+                      datestartday={const_codeathon2017.datestartday} dateendday={const_codeathon2017.dateendday}
+                      time={const_codeathon2017.time} location={const_codeathon2017.location}
                       popupContent= {const_codeathon2017.popupContent} />
             </div>
         </div>
         <div className="events-pages bottom"  >
-            <button className={ "events-tag-button " + this.state.page1Style} onClick={this.onPage1Click} > 1 </button> 
-            <button className={ "events-tag-button " + this.state.page2Style} onClick={this.onPage2Click} > 2 </button> 
+            <button className={ "events-tag-button " + this.state.page1Style} onClick={this.onPage1Click} > 1 </button>
+            <button className={ "events-tag-button " + this.state.page2Style} onClick={this.onPage2Click} > 2 </button>
             {/* <button className={ "events-tag-button " + this.state.page3Style} onClick={this.onPage3Click} > 3 </button>  */}
-          </div> 
+          </div>
       </div>
     );
   }
@@ -201,7 +211,7 @@ class Event extends Component {
     var today = new Date();
     var styling = "past-event";
     var ev_date= "";
-    var mnth = 0; 
+    var mnth = 0;
 
     // determine monthh index for calculations
     switch (this.props.datemonth) {
@@ -229,13 +239,13 @@ class Event extends Component {
           mnth = 11; break;
       case "December":
           mnth = 12; break;
-  }    
+  }
 
   var year = parseInt(this.props.dateyear);
   var day = parseInt(this.props.datestartday);
-  
+
   // change styling depending when event occurs
-    if (year >= today.getFullYear() && 
+    if (year >= today.getFullYear() &&
        mnth >= (today.getMonth() + 1)) {
 
       if (mnth == today.getMonth() + 1) {
@@ -249,18 +259,18 @@ class Event extends Component {
     }
 
     // create display date
-    ev_date = this.props.datemonth + " " + this.props.datestartday; 
+    ev_date = this.props.datemonth + " " + this.props.datestartday;
     if (this.props.dateendday.length > 0) {
       ev_date = ev_date + "-" + this.props.dateendday;
     }
     ev_date = ev_date + " " + this.props.dateyear;
 
     // state object
-    this.state = {title: this.props.title, pic : this.props.pic , 
+    this.state = {title: this.props.title, pic : this.props.pic ,
       desc: this.props.desc, date: ev_date,
-       time: this.props.time, location: this.props.location, 
-       link: this.props.link, styling: styling, page:this.props.page, 
-       currentPage: this.props.currentPage, 
+       time: this.props.time, location: this.props.location,
+       link: this.props.link, styling: styling, page:this.props.page,
+       currentPage: this.props.currentPage,
         popupContent: this.props.popupContent}
 
   }
@@ -269,31 +279,31 @@ class Event extends Component {
     var currentPage = this.props.currentPage;
     var popupContent= this.state.popupContent;
     return(
-      <Popup 
+      <Popup
       trigger = {
           <div className={this.state.styling + " Event "}>
             <img className="event-img" src={this.state.pic} alt="event image" />
-            <div className="event-info"> 
-              <div className="event-title event-item"> 
+            <div className="event-info">
+              <div className="event-title event-item">
                 <span className="event-title-text"> {this.state.title} </span>
               </div>
-              <div className="event-desc event-item"> 
+              <div className="event-desc event-item">
                 <span className="event-desc-text"> {this.state.desc} </span>
               </div>
-              <div className="event-date event-item"> 
+              <div className="event-date event-item">
                 <img className="about-item-ev" src={calendar}  alt="location icon" />
                 <span className="event-date-text"> {this.state.date} </span>
               </div>
-              <div className="event-time event-item"> 
+              <div className="event-time event-item">
                 <img className="about-item-ev" src={clock} alt="clock icon" />
-                <span className="event-time-text"> {this.state.time} </span> 
+                <span className="event-time-text"> {this.state.time} </span>
               </div>
-              <div className="event-location event-item"> 
+              <div className="event-location event-item">
                 <img className="about-item-ev" src={location} alt="location icon" />
-                <span className="event-location-text"> {this.state.location} </span>  
+                <span className="event-location-text"> {this.state.location} </span>
               </div>
             </div>
-        </div> } 
+        </div> }
     modal
     closeOnDocumentClick
     contentStyle={contentStyle}>
@@ -301,21 +311,21 @@ class Event extends Component {
       <h1>  {this.state.title} </h1>
       { /*<img className="event-img-popup" src={this.state.pic} alt="event image" /> */}
       <div className="popup-event-items">
-              <div className="event-date event-item-p"> 
+              <div className="event-date event-item-p">
                 <img className="about-item-ev" src={calendar}  alt="location icon" />
                 <span className="event-date-text"> {this.state.date} </span>
               </div>
-              <div className="event-time event-item-p"> 
+              <div className="event-time event-item-p">
                 <img className="about-item-ev" src={clock} alt="clock icon" />
-                <span className="event-time-text"> {this.state.time} </span> 
+                <span className="event-time-text"> {this.state.time} </span>
               </div>
-              <div className="event-location event-item-p"> 
+              <div className="event-location event-item-p">
                 <img className="about-item-ev" src={location} alt="location icon" />
-                <span className="event-location-text"> {this.state.location} </span> 
+                <span className="event-location-text"> {this.state.location} </span>
               </div>
       </div>
       <div className="popupText" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(popupContent)}}>
-       </div> 
+       </div>
       </div>
     </Popup>
     );
