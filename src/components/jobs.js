@@ -23,6 +23,12 @@ class Jobs extends Component {
           date="Date: October 12-13, 2018" 
           loc="Cooper Union, NY"/>
         </div>
+        <div className="jobs-div">
+          <Job title="test job" 
+          desc="test desc" 
+          date="Date: October 12-13, 2018" 
+          loc="Cooper Union, NY"/>
+        </div>
       </div>
     );
   } 
