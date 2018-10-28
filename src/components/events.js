@@ -14,7 +14,7 @@ import location from './common/location.png';
 import ccis from './common/ccis.png';
 import bullet from './common/bulletpoint.png'
 
-import blockchainonoraclecloud2018 from './events_pics/blockchainonoraclecloud2018.jpeg';
+import googleyoutubedinnerfall2018 from './events_pics/googleyoutubedinnerfall2018.jpg';
 import agiledevopsimg18 from './events_pics/agiledevopsimg18.jpeg';
 import witempsummit2018 from './events_pics/witempsummit2018.png';
 import cloud9google2018 from './events_pics/cloud92018.png';
@@ -113,7 +113,7 @@ class Events extends Component {
           <div className="Events">
             <div className="page1" hidden={this.state.isPage1Hidden} >
             <Event currentPage= {this.state.currentPage}
-                    title= {const_googledinnerandyoutubepanel2018.title} pic={blockchainonoraclecloud2018}
+                    title= {const_googledinnerandyoutubepanel2018.title} pic={googleyoutubedinnerfall2018}
                     desc={const_googledinnerandyoutubepanel2018.desc}
                     dateyear={const_googledinnerandyoutubepanel2018.dateyear} datemonth={const_googledinnerandyoutubepanel2018.datemonth}
                     datestartday={const_googledinnerandyoutubepanel2018.datestartday} dateendday={const_googledinnerandyoutubepanel2018.dateendday}
