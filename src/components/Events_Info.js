@@ -1,19 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export const const_blockchainonoraclecloudtalk2018 = {
-    title: "Blockchain On Cloud Oracle.",
-    desc: "NUGWC is presenting 'Blockchain On Cloud Oracle'.",
+export const const_googledinnerandyoutubepanel2018 = {
+    title: "Google Dinner and YouTube Panel",
+    desc: "An opportunity to connect and learn at 'Google Dinner and YouTube Panel'.",
     dateyear: "2018",
     datemonth: "October",
     datestartday:"19",
     dateendday: "",
-    time: "5pm",
+    time: "6pm - 7:30pm",
     location: "West Village G, Room 106, Northeastern University",
-    popupContent: `<p>Come learn about Blockchain being used on Oracle clouds!</p>
-    <p> SUGANDHA KHER - ORACLE: CLOUD SOLUTIONS ENGINEER: Sughanda is a passionate technologist working in the Reasearch and Development division of Oracle as a Cloud Solutions Engineer. Her team is responsible for delivering solutions with scale for relational, graph, spatial, semi-structured, and unstructured non-relational data as well as streaming data supporting a diverse set of use-cases, such as OLTP, warehousing, machine learning, text search, image analytics, and deep learning. She is a recent husky grad and an advocate for women in STEM.</p>
-    <p>ALISON VISCONTI - ORACLE: MARKETING LEAD, BURLINGTON ORACLE CLOUD SOLUTION HUB: Alison is a social media specialist at Oracle working on spearheading marketing initiatives for oracle programs. </p>
-    <p><a href="https://blockchainonoraclecloud.splashthat.com/">Check in to the event here</a></p>
+    popupContent: `<p>This is a joint event between the Graduate Women Coders and the Google
+University Programs team. Please join us for a networking dinner and panel of
+female YouTubers. This will be a wonderful opportunity to ask questions of
+experienced YouTubers and learn about the possibilities of working at
+YouTube and Google. The panel will be made up of a YouTube Software
+Engineer, a Product Manager, and a Policy Enforcement Manager </p>
     <p>For any queries, you can reach us at &lt;nugwc-organizers@lists.ccs.neu.edu&gt;</p>
     `
 }

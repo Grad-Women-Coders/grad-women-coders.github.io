@@ -28,7 +28,7 @@ import talkintuit2017 from './events_pics/talkintuit2017.jpg';
 import talkintuitsp17 from './events_pics/talkintuitsp17.jpg';
 import techtalk2016 from './events_pics/techtalk2016.png';
 
-import {const_blockchainonoraclecloudtalk2018, const_agiledevopstalk2018, const_witempsummit2018, const_cloud9google2018,const_algandintprep2018,
+import {const_googledinnerandyoutubepanel2018, const_agiledevopstalk2018, const_witempsummit2018, const_cloud9google2018,const_algandintprep2018,
   const_googlecambnight2017, const_internshiptalks2017,const_internshiptalks2018,
   const_network2017, const_sectechtalk2017,const_talkintuit2017,
   const_talkintuitsp17, const_techtalk2016,const_gmosession2017,
@@ -98,20 +98,13 @@ class Events extends Component {
           Upcoming Events
           </div>
           <div className="futureEvents">
-          <Event currentPage= {this.state.currentPage}
-                  title= {const_agiledevopstalk2018.title} pic={agiledevopsimg18}
-                  desc={const_agiledevopstalk2018.desc}
-                  dateyear={const_agiledevopstalk2018.dateyear} datemonth={const_agiledevopstalk2018.datemonth}
-                  datestartday={const_agiledevopstalk2018.datestartday} dateendday={const_agiledevopstalk2018.dateendday}
-                  time={const_agiledevopstalk2018.time} location={const_agiledevopstalk2018.location}
-                  popupContent= {const_agiledevopstalk2018.popupContent} />
-          <Event currentPage= {this.state.currentPage}
-                  title= {const_blockchainonoraclecloudtalk2018.title} pic={blockchainonoraclecloud2018}
-                  desc={const_blockchainonoraclecloudtalk2018.desc}
-                  dateyear={const_blockchainonoraclecloudtalk2018.dateyear} datemonth={const_blockchainonoraclecloudtalk2018.datemonth}
-                  datestartday={const_blockchainonoraclecloudtalk2018.datestartday} dateendday={const_blockchainonoraclecloudtalk2018.dateendday}
-                  time={const_blockchainonoraclecloudtalk2018.time} location={const_blockchainonoraclecloudtalk2018.location}
-                  popupContent= {const_blockchainonoraclecloudtalk2018.popupContent} />
+          { /*<Event currentPage= {this.state.currentPage}
+                  title= {const_googledinnerandyoutubepanel2018.title} pic={blockchainonoraclecloud2018}
+                  desc={const_googledinnerandyoutubepanel2018.desc}
+                  dateyear={const_googledinnerandyoutubepanel2018.dateyear} datemonth={const_googledinnerandyoutubepanel2018.datemonth}
+                  datestartday={const_googledinnerandyoutubepanel2018.datestartday} dateendday={const_googledinnerandyoutubepanel2018.dateendday}
+                  time={const_googledinnerandyoutubepanel2018.time} location={const_googledinnerandyoutubepanel2018.location}
+                  popupContent= {const_googledinnerandyoutubepanel2018.popupContent} />*/}
           </div>
         </div>
           <div className="events-cover-text past-events-header">
@@ -119,6 +112,20 @@ class Events extends Component {
           </div>
           <div className="Events">
             <div className="page1" hidden={this.state.isPage1Hidden} >
+            <Event currentPage= {this.state.currentPage}
+                    title= {const_googledinnerandyoutubepanel2018.title} pic={blockchainonoraclecloud2018}
+                    desc={const_googledinnerandyoutubepanel2018.desc}
+                    dateyear={const_googledinnerandyoutubepanel2018.dateyear} datemonth={const_googledinnerandyoutubepanel2018.datemonth}
+                    datestartday={const_googledinnerandyoutubepanel2018.datestartday} dateendday={const_googledinnerandyoutubepanel2018.dateendday}
+                    time={const_googledinnerandyoutubepanel2018.time} location={const_googledinnerandyoutubepanel2018.location}
+                    popupContent= {const_googledinnerandyoutubepanel2018.popupContent} />
+            <Event currentPage= {this.state.currentPage}
+                    title= {const_agiledevopstalk2018.title} pic={agiledevopsimg18}
+                    desc={const_agiledevopstalk2018.desc}
+                    dateyear={const_agiledevopstalk2018.dateyear} datemonth={const_agiledevopstalk2018.datemonth}
+                    datestartday={const_agiledevopstalk2018.datestartday} dateendday={const_agiledevopstalk2018.dateendday}
+                    time={const_agiledevopstalk2018.time} location={const_agiledevopstalk2018.location}
+                    popupContent= {const_agiledevopstalk2018.popupContent} />
               <Event currentPage= {this.state.currentPage}
                       title= {const_witempsummit2018.title} pic={witempsummit2018}
                       desc={const_witempsummit2018.desc}
