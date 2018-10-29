@@ -1,6 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+export const const_wayfairnetworking2018 = {
+    title: "WayFair Networking opportunity",
+    desc: "WayFair is Hosting GWC at their HQ down the street from NEU, on November 9th!!",
+    dateyear: "2018",
+    datemonth: "November",
+    datestartday:"9",
+    dateendday: "",
+    time: "3pm",
+    location: "4 Copley Place, Boston, MA",
+    popupContent: `<p>There will be a tour of the WayFair office, a presentation and demo of the various technology platforms in the company, as well as a talk from some great data scientists, engineers and machine intelligence analysts!</p>
+
+<p>You will also get a chance to network with recruiters about opportunities at Wayfair for Data and engineering roles! If you have already applied for a position, this is a great way to get yourself in front of a recruiter to put a face to your application!</p>
+<p><a href="https://wayfairinfosessionwithgradwome.splashthat.com/">Check in to the event here</a></p>
+    <p>For any queries, you can reach us at &lt;nugwc-organizers@lists.ccs.neu.edu&gt;</p>
+    `
+}
+
 export const const_googledinnerandyoutubepanel2018 = {
     title: "Google Dinner and YouTube Panel",
     desc: "An opportunity to connect and learn at 'Google Dinner and YouTube Panel'.",

@@ -14,6 +14,7 @@ import location from './common/location.png';
 import ccis from './common/ccis.png';
 import bullet from './common/bulletpoint.png'
 
+import wayfaireventfall2018 from './events_pics/wayfaireventfall2018.jpg';
 import googleyoutubedinnerfall2018 from './events_pics/googleyoutubedinnerfall2018.jpg';
 import agiledevopsimg18 from './events_pics/agiledevopsimg18.jpeg';
 import witempsummit2018 from './events_pics/witempsummit2018.png';
@@ -28,7 +29,7 @@ import talkintuit2017 from './events_pics/talkintuit2017.jpg';
 import talkintuitsp17 from './events_pics/talkintuitsp17.jpg';
 import techtalk2016 from './events_pics/techtalk2016.png';
 
-import {const_googledinnerandyoutubepanel2018, const_agiledevopstalk2018, const_witempsummit2018, const_cloud9google2018,const_algandintprep2018,
+import {const_wayfairnetworking2018, const_googledinnerandyoutubepanel2018, const_agiledevopstalk2018, const_witempsummit2018, const_cloud9google2018,const_algandintprep2018,
   const_googlecambnight2017, const_internshiptalks2017,const_internshiptalks2018,
   const_network2017, const_sectechtalk2017,const_talkintuit2017,
   const_talkintuitsp17, const_techtalk2016,const_gmosession2017,
@@ -98,13 +99,13 @@ class Events extends Component {
           Upcoming Events
           </div>
           <div className="futureEvents">
-          { /*<Event currentPage= {this.state.currentPage}
-                  title= {const_googledinnerandyoutubepanel2018.title} pic={blockchainonoraclecloud2018}
-                  desc={const_googledinnerandyoutubepanel2018.desc}
-                  dateyear={const_googledinnerandyoutubepanel2018.dateyear} datemonth={const_googledinnerandyoutubepanel2018.datemonth}
-                  datestartday={const_googledinnerandyoutubepanel2018.datestartday} dateendday={const_googledinnerandyoutubepanel2018.dateendday}
-                  time={const_googledinnerandyoutubepanel2018.time} location={const_googledinnerandyoutubepanel2018.location}
-                  popupContent= {const_googledinnerandyoutubepanel2018.popupContent} />*/}
+        <Event currentPage= {this.state.currentPage}
+                  title= {const_wayfairnetworking2018.title} pic={wayfaireventfall2018}
+                  desc={const_wayfairnetworking2018.desc}
+                  dateyear={const_wayfairnetworking2018.dateyear} datemonth={const_googledinnerandyoutubepanel2018.datemonth}
+                  datestartday={const_wayfairnetworking2018.datestartday} dateendday={const_googledinnerandyoutubepanel2018.dateendday}
+                  time={const_wayfairnetworking2018.time} location={const_googledinnerandyoutubepanel2018.location}
+                  popupContent= {const_wayfairnetworking2018.popupContent} />
           </div>
         </div>
           <div className="events-cover-text past-events-header">
