@@ -25,7 +25,7 @@ class Team extends Component {
     this.hoverOn= this.hoverOn.bind(this)
     this.hoverOff= this.hoverOff.bind(this)
   }
-  
+
   hoverOn() {
     this.setState({hidePhoto:true});
   }
@@ -37,33 +37,29 @@ class Team extends Component {
   render() {
     return (
       <div className="App">
-        <div className="Team-Header_">      
+        <div className="Team-Header_">
           <div className="team-cover-text" onMouseOver={this.hoverOn} onMouseOut={this.hoverOff}>
           Meet the GWC Team
           </div>
         </div>
         <div className="People">
-          <Person name="Victoria Plange" title="President" pic={plange} git="" 
-                  email="plange.v@husky.neu.edu" link="https://www.linkedin.com/in/victoria-sarah-plange"/>
-          <Person name="Namrata Bilurkar" title="Vice President" pic={bilurkar} git="https://github.com/namratab94" 
-                  email="bilurkar.n@husky.neu.edu" link=" https://www.linkedin.com/in/namratabilurkar"/>
-          <Person name="Anubhuti Vyas" title="Secretary" pic={vyas} git="https://github.com/anubhutivyas" 
-                  email="vyas.an@husky.neu.edu" link="https://www.linkedin.com/in/anubhutivyas/"/>
-          <Person name="Sravya Yella" title="Treasurer" pic={yella} git="" 
-                  email="yella.sr@husky.neu.edu" link="https://www.linkedin.com/in/sravyayella/"/>
-          <Person name="Dhanisha Phadate" title="Public Relations I" pic={phadate} git="https://github.com/Phadated" 
-                  email="phadate.d@husky.neu.edu" link="https://www.linkedin.com/in/dhanisha-phadate"/>
-          <Person name="Pujitha Srimameni" title="Public Relations II" pic={sriramaneni} git="" 
-                  email="sriramaneni.p@husky.neu.edu" link="https://www.linkedin.com/in/pujitha-sriramaneni/"/>
-          <Person name="Deesha Shah" title="Web Design I" pic={shah} git="https://github.com/deeshashah" 
-                  email="" link="https://www.linkedin.com/in/deeshashah/"/>
-          <Person name="Ritika Gupta" title="Web Design II" pic={gupta} git="" 
+          <Person name="Ritika Gupta" title="President" pic={ritika} git="GitHub.com/rtkgupta"
                   email="gupta.ritika@husky.neu.edu" link="https://www.linkedin.com/in/rtkgupta/"/>
-          <Person name="Dean Doreen Hodgkin" title="Mentor" pic={hodgkin} git="" 
+          <Person name="Hiral Rathod" title="Vice President" pic={hiral} git="https://github.com/namratab94"
+                  email="rathod.hi@husky.neu.edu" link="http://linkedin.com/in/hiral-rathod"/>
+          <Person name="Isha Barot" title="Secretary" pic={isha} git="https://github.com/barot-isha/"
+                  email="barot.i@husky.neu.edu" link="https://www.linkedin.com/in/isha-barot/"/>
+          <Person name="Sravya Yella" title="Treasurer" pic={yella} git=""
+                  email="yella.sr@husky.neu.edu" link="https://www.linkedin.com/in/sravyayella/"/>
+          <Person name="Isha Barot" title="Public Relations" pic={isha} git="https://github.com/barot-isha/"
+                  email="barot.i@husky.neu.edu" link="https://www.linkedin.com/in/isha-barot/"/>
+          <Person name="Nishtha Dutta" title="Web Design" pic={nishtha} git="github.com/nishtha-dutta"
+                  email="dutta.ni@husky.neu.edu" link="https://www.linkedin.com/in/nishtha-dutta"/>
+          <Person name="Dean Doreen Hodgkin" title="Mentor" pic={hodgkin} git=""
                   email="d.hodgkin@northeastern.edu" link=""/>
-          <Person name="Kathi Vander Laan" title="Advisor" pic={vander_laan} git="" 
+          <Person name="Kathi Vander Laan" title="Advisor" pic={vander_laan} git=""
                   email="k.vanderlaan@neu.edu" link=""/>
-          <Person name="Nada Aladdin Jamel" title="Advisor" pic={jamel} git="" 
+          <Person name="Nada Aladdin Jamel" title="Advisor" pic={jamel} git=""
                   email="n.naji@northeastern.edu" link=""/>
         </div>
         <div className="team-cover-text team-photo-text">
@@ -95,7 +91,7 @@ class Team extends Component {
                 <img src={require("./carousel-photos/image6.jpg")} />
                 <p className="legend">Organizing Committee Summer 2016 </p>
               </div>
-          </Carousel> 
+          </Carousel>
         </div>
       </div>
     );
@@ -106,31 +102,31 @@ class Person extends Component {
   constructor(props) {
     super(props);
     this.state = { name:this.props.name, title:this.props.title, pic: this.props.pic,
-                  email: this.props.email, git: this.props.git, link: this.props.link, 
+                  email: this.props.email, git: this.props.git, link: this.props.link,
                   iconsize: "", bigprofile: ""}
-    
-    this.hoverAction = this.hoverAction.bind(this); 
-    this.hoverOut = this.hoverOut.bind(this); 
+
+    this.hoverAction = this.hoverAction.bind(this);
+    this.hoverOut = this.hoverOut.bind(this);
     this.email = React.createRef();
   }
 
-  hoverAction() { 
+  hoverAction() {
     this.setState({
-      iconsize: "big-icons", 
+      iconsize: "big-icons",
       bigprofile: "big-profile"
     });
   }
 
   hoverOut() {
     this.setState({
-      iconsize: "", 
+      iconsize: "",
       bigprofile: ""
     });
   }
 
   displayItem(item) {
     if (item.length > 0) {
-      return true; 
+      return true;
     }
     else {
       return false;
@@ -147,23 +143,23 @@ class Person extends Component {
         <div className="person-item person-title"> {this.state.title} </div>
         <div className="person-item person-contact-items" >
             < div className="person-contact-item"  hidden={!this.displayItem(this.state.email)}>
-                <a href={"mailto:" + this.state.email}> 
+                <a href={"mailto:" + this.state.email}>
                 <img className={this.state.iconsize + " person-img person-email"} src={person_email} alt="email link"/>
                 </a>
             </div>
             < div className="person-contact-item"  hidden={!this.displayItem(this.state.git)}>
-                <a href={this.state.git}> 
+                <a href={this.state.git}>
                 <img id="git" className={this.state.iconsize + " person-git person-img"} src={person_git} alt="git link"/>
                 </a>
             </div>
             < div className="person-contact-item"  hidden={!this.displayItem(this.state.link)}>
-                <a href={this.state.link}> 
+                <a href={this.state.link}>
                 <img id="link" className={this.state.iconsize + " person-link person-img"} src={person_linkedin} alt="linkedin link"/>
                 </a>
             </div>
         </div>
       </div>
-    ); 
+    );
 
   }
 
