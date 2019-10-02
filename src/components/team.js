@@ -3,14 +3,11 @@ import React, { Component, ReactComponent } from 'react';
 import person_email from './person_email.png';
 import person_git from './person_git.png';
 import person_linkedin from './person_linkedin.png';
-import plange from './team_photos/plange.jpeg';
-import vyas from './team_photos/vyas.jpg'
-import phadate from './team_photos/phadate.png'
-import sriramaneni from './team_photos/sriramaneni.jpg'
-import bilurkar from './team_photos/bilurkar.jpg'
-import shah from './team_photos/shah.jpeg'
-import gupta from './team_photos/gupta.jpg'
-import yella from './team_photos/yella.jpg'
+import ritika from './team_photos/ritika.jpeg';
+import anita from './team_photos/anita.jpeg';
+import hiral from './team_photos/hiral.jpeg';
+import isha from './team_photos/isha.jpeg';
+import nishtha from './team_photos/nishtha.jpg';
 import vander_laan from './team_photos/vander_laan.jpg';
 import jamel from './team_photos/jamel.jpg';
 import hodgkin from './team_photos/hodgkin.jpg';
@@ -47,12 +44,10 @@ class Team extends Component {
                   email="gupta.ritika@husky.neu.edu" link="https://www.linkedin.com/in/rtkgupta/"/>
           <Person name="Hiral Rathod" title="Vice President" pic={hiral} git=""
                   email="rathod.hi@husky.neu.edu" link="http://linkedin.com/in/hiral-rathod"/>
-          <Person name="Isha Barot" title="Secretary" pic={isha} git="https://github.com/barot-isha/"
+          <Person name="Isha Barot" title="Secretary / Public Relations" pic={isha} git="https://github.com/barot-isha/"
                   email="barot.i@husky.neu.edu" link="https://www.linkedin.com/in/isha-barot/"/>
           <Person name="Anita Preko" title="Treasurer" pic={yella} git=""
                   email="preko.a@husky.neu.edu" link="https://www.linkedin.com/in/anita-preko-05812ab5/"/>
-          <Person name="Isha Barot" title="Public Relations" pic={isha} git="https://github.com/barot-isha/"
-                  email="barot.i@husky.neu.edu" link="https://www.linkedin.com/in/isha-barot/"/>
           <Person name="Nishtha Dutta" title="Web Design" pic={nishtha} git="https://github.com/nishtha-dutta"
                   email="dutta.ni@husky.neu.edu" link="https://www.linkedin.com/in/nishtha-dutta"/>
           <Person name="Dean Doreen Hodgkin" title="Mentor" pic={hodgkin} git=""
