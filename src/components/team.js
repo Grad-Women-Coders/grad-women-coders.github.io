@@ -43,17 +43,17 @@ class Team extends Component {
           </div>
         </div>
         <div className="People">
-          <Person name="Ritika Gupta" title="President" pic={ritika} git="GitHub.com/rtkgupta"
+          <Person name="Ritika Gupta" title="President" pic={ritika} git="https://github.com/rtkgupta"
                   email="gupta.ritika@husky.neu.edu" link="https://www.linkedin.com/in/rtkgupta/"/>
-          <Person name="Hiral Rathod" title="Vice President" pic={hiral} git="https://github.com/namratab94"
+          <Person name="Hiral Rathod" title="Vice President" pic={hiral} git=""
                   email="rathod.hi@husky.neu.edu" link="http://linkedin.com/in/hiral-rathod"/>
           <Person name="Isha Barot" title="Secretary" pic={isha} git="https://github.com/barot-isha/"
                   email="barot.i@husky.neu.edu" link="https://www.linkedin.com/in/isha-barot/"/>
-          <Person name="Avanti Patil" title="Treasurer" pic={yella} git=""
-                  email="patil.a@husky.neu.edu" link="https://www.linkedin.com/in/avantipatil/"/>
+          <Person name="Anita Preko" title="Treasurer" pic={yella} git=""
+                  email="preko.a@husky.neu.edu" link="https://www.linkedin.com/in/anita-preko-05812ab5/"/>
           <Person name="Isha Barot" title="Public Relations" pic={isha} git="https://github.com/barot-isha/"
                   email="barot.i@husky.neu.edu" link="https://www.linkedin.com/in/isha-barot/"/>
-          <Person name="Nishtha Dutta" title="Web Design" pic={nishtha} git="github.com/nishtha-dutta"
+          <Person name="Nishtha Dutta" title="Web Design" pic={nishtha} git="https://github.com/nishtha-dutta"
                   email="dutta.ni@husky.neu.edu" link="https://www.linkedin.com/in/nishtha-dutta"/>
           <Person name="Dean Doreen Hodgkin" title="Mentor" pic={hodgkin} git=""
                   email="d.hodgkin@northeastern.edu" link=""/>
