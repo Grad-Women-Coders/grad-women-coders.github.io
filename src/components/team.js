@@ -46,7 +46,7 @@ class Team extends Component {
                   email="rathod.hi@husky.neu.edu" link="http://linkedin.com/in/hiral-rathod"/>
           <Person name="Isha Barot" title="Secretary / Public Relations" pic={isha} git="https://github.com/barot-isha/"
                   email="barot.i@husky.neu.edu" link="https://www.linkedin.com/in/isha-barot/"/>
-          <Person name="Anita Preko" title="Treasurer" pic={yella} git=""
+          <Person name="Anita Preko" title="Treasurer" pic={anita} git=""
                   email="preko.a@husky.neu.edu" link="https://www.linkedin.com/in/anita-preko-05812ab5/"/>
           <Person name="Nishtha Dutta" title="Web Design" pic={nishtha} git="https://github.com/nishtha-dutta"
                   email="dutta.ni@husky.neu.edu" link="https://www.linkedin.com/in/nishtha-dutta"/>
