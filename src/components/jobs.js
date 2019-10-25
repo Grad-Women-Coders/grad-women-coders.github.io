@@ -1,11 +1,10 @@
-import React, { Component, ReactComponent } from 'react';
+import React, { Component } from 'react';
 import './common/header.css';
-import location from './job_location.png'
-import arrow from './arrow.png'
-import {Header, Footer} from './common/header.js'
+import location from './job_location.png';
 
 
 class Jobs extends Component {
+
   render() {
     return (
       <div className="App">
@@ -41,7 +40,7 @@ class Jobs extends Component {
           West Virginia, Wisconsin, Wyoming"/>
         </div>
         <div className="jobs-div">
-          <Job title="Digital Technology Leadership Program (DTLP) - 2019-----11111" 
+          <Job title="Digital Technology Leadership Program (DTLP) - 2019-----11111"
           desc="The Digital Technology Leadership Program (DTLP) offers those with a passion
           to grow their leadership, business acumen, and technical skills while building a career
           with unlimited potential. Program members lead by doing, gaining real-world experience by
@@ -63,15 +62,12 @@ class Jobs extends Component {
 }
 
 class Job extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return(
       <div className="job" >
         <div className="job-column left">
-          <img src={location} className="job-loc-img"/>
+          <img src={location} className="job-loc-img" alt="" />
           <div className="job-location">
             {this.props.loc}
           </div>

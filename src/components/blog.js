@@ -1,6 +1,5 @@
-import React, { Component, ReactComponent } from 'react';
+import React, { Component } from 'react';
 import './common/header.css';
-import {Header, Footer} from './common/header.js'
 
 
 class Blog extends Component {
@@ -8,7 +7,7 @@ class Blog extends Component {
     return (
       <div className="App">
         <div className="blog-header" >
-        Blog Posts 
+        Blog Posts
         </div>
         <div className="no-posts">
         Check back soon!

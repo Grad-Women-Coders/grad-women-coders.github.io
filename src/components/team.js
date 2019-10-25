@@ -1,4 +1,4 @@
-import React, { Component, ReactComponent } from 'react';
+import React, { Component } from 'react';
 
 import person_email from './person_email.png';
 import person_git from './person_git.png';
@@ -13,7 +13,6 @@ import jamel from './team_photos/jamel.jpg';
 import hodgkin from './team_photos/hodgkin.jpg';
 
 import { Carousel } from 'react-responsive-carousel';
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class Team extends Component {
   constructor(props) {
@@ -63,27 +62,27 @@ class Team extends Component {
         <div className="Carousel-div">
           <Carousel showArrows={true}>
               <div>
-                <img src={require("./carousel-photos/image1.jpg")} />
+                <img src={require("./carousel-photos/image1.jpg")} alt="" />
                 <p className="legend">Organizing Committee Spring 2018 </p>
               </div>
               <div>
-                <img src={require("./carousel-photos/image2.jpg")} />
+                <img src={require("./carousel-photos/image2.jpg")} alt="" />
                 <p className="legend">Organizing Committee Fall 2017 </p>
               </div>
               <div>
-                <img src={require("./carousel-photos/image3.jpg")} />
+                <img src={require("./carousel-photos/image3.jpg")} alt="" />
                 <p className="legend">Organizing Committee Summer 2017 </p>
               </div>
               <div>
-                <img src={require("./carousel-photos/image4.jpg")} />
+                <img src={require("./carousel-photos/image4.jpg")} alt="" />
                 <p className="legend">Organizing Committee Spring 2017 </p>
               </div>
               <div>
-                <img src={require("./carousel-photos/image5.png")} />
+                <img src={require("./carousel-photos/image5.png")} alt="" />
                 <p className="legend">Organizing Committee Fall 2016 </p>
               </div>
               <div>
-                <img src={require("./carousel-photos/image6.jpg")} />
+                <img src={require("./carousel-photos/image6.jpg")} alt="" />
                 <p className="legend">Organizing Committee Summer 2016 </p>
               </div>
           </Carousel>

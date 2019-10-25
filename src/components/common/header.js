@@ -1,12 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import logo from './gwc.jpeg';
 import facebook from './fb.png';
 import email from './email.png';
-import git from './git.svg';
 import ccis from './ccis.png';
-import twitter from './twitter.png';
-import instagram from './instagram.png';
 import registerServiceWorker from './registerServiceWorker';
 
 import { Link } from 'react-router-dom'
@@ -21,8 +17,6 @@ class Square extends React.Component {
       this.state = { value:this.props.text, showText:true, color:'#afcaff'}
       this.hoverOn= this.hoverOn.bind(this)
       this.hoverOff= this.hoverOff.bind(this)
-
-      this.color
     }
 
     render() {

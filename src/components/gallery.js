@@ -1,19 +1,5 @@
-import React, { Component, ReactComponent } from 'react';
-import coverphoto from './common/cover_photo.jpg';
-import facebook from './common/fb.png';
-import email from './common/email.png';
-import hackpad from './common/hackpad.png';
-import git from './common/git.svg';
-import twitter from './common/twitter.png';
-import instagram from './common/instagram.png';
-import logo from './common/gwc.png';
-import neu from './common/neu.png';
-import calendar from './common/calendar.png';
-import clock from './common/clock.png';
-import location from './common/location.png';
-import ccis from './common/ccis.png';
+import React, { Component } from 'react';
 import './common/header.css';
-import {Header, Footer} from './common/header.js'
 
 import GalleryComp from 'react-grid-gallery';
 
@@ -49,7 +35,7 @@ class Gallery extends Component {
   }
 
   isHidden(no) {
-    if (no == this.state.currentPage) {
+    if (no === this.state.currentPage) {
       return false;
     }
     else {
