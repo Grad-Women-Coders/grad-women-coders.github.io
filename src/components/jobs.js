@@ -86,7 +86,7 @@ class Job extends Component {
         </div>
         <div className="job-column right">
           <div className="job-item job-link">
-            <a className="button job-link-btn" href={this.props.link} target="_blank">
+            <a className="button job-link-btn" href={this.props.link} target="_blank" rel="noopener noreferrer">
               More Info
             </a>
           </div>
