@@ -1,0 +1,33 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "dompurify": "^1.0.11",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-grid-gallery": "^0.5.5",
+    "react-mailchimp-subscribe": "^2.1.0",
+    "react-native-scripts": "^2.0.1",
+    "react-responsive-carousel": "^3.1.51",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-scroll-to-component": "^1.0.2",
+    "react-typing-animation": "^1.6.2",
+    "reactjs-popup": "^1.5.0",
+    "webfontloader": "^1.6.28"
+  },
+  "homepage": "https://nugwc.ccs.neu.edu",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
+}
