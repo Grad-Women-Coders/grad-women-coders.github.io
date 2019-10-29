@@ -64,7 +64,7 @@ class About extends Component {
           <div className="location-date-time" >
             <div className="about-element">
               <img className="about-item" src={calendar}  alt="location icon" />
-              <span className="about-item-text" > Every Friday </span>
+              <span className="about-item-text" > Every Monday </span>
             </div>
             <div className="about-element">
               <img className="about-item" src={clock} alt="clock icon" />
@@ -72,7 +72,7 @@ class About extends Component {
             </div>
             <div className="about-element">
               <img className="about-item" src={location} alt="location icon" />
-              <span className="about-item-text" > 106 West village G </span>
+              <span className="about-item-text" > 111 Snell Library </span>
             </div>
           </div>
           <div className="about-text" >
